@@ -1,0 +1,28 @@
+<%= form_for(@tutor) do |f|%>
+		<% @tutor.errors.full_messages.each do |message| %>	
+			<div class="be-red white top-space">
+				<%= message  %>
+			</div>
+		<%end%>
+	<div class="field">
+		<%= f.text_field :nombre, placeholder: "Nombre", class:"form-control"%>
+	</div>
+	<div class="field">
+		<%= f.text_field :apellido, placeholder: "Apellido", class:"form-control"%>
+	</div>
+	<div class="field">
+		<%= f.text_field :programa, placeholder: "Programa", class:"form-control"%>
+	</div>
+	<div class="field">
+		<%= f.text_field :semestre, placeholder: "Semestre", class:"form-control"%>
+	</div>
+	<div class="field">
+		<%= f.text_field :cedula, placeholder: "Cedula", class:"form-control"%>
+	</div>
+	<div class="field">
+		<%= f.text_field :inf_contact, placeholder: "Inf. Contacto", class:"form-control"%>
+	</div>
+	<div class="field">
+		<%= f.submit "Guardar", class:"btn be-red white "%>
+	</div>	
+	<%end%>

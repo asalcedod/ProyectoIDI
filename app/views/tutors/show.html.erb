@@ -1,1 +1,10 @@
-<% @tutors.inspect %>
+<h1><%= @tutor.nombre %></h1>
+<div>
+	<%= @tutor.cedula %>
+</div>
+<div>
+	<%= @tutor.programa %>
+</div>
+<div>
+	<%= link_to "Editar", edit_tutor_path(@tutor), class:"edit"%>
+</div>
