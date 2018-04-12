@@ -9,6 +9,23 @@
   </head>
 
   <body>
+
+  	<header>
+  		<nav class="be-red white large-padding">
+  			<ul class="no-list row center-xs">
+  				<li style="list-style:none;" class="col-md">
+  					<%= link_to "Inicio", root_path%>
+  				</li>
+  				<li style="list-style:none;" class="col-md">
+  					<%= link_to "Programacion", root_path%>
+  				</li>
+  				<li style="list-style:none;" class="col-md">
+  					<%= link_to "Contenido", root_path%>
+  				</li>  					
+  			</ul>
+  		</nav>
+  	</header>
+  	
     <%= yield %>
   </body>
 </html>

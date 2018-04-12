@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  materia: MyString
+  monitor: MyString
+  fecha: MyString
+  salon: MyText
+
+two:
+  materia: MyString
+  monitor: MyString
+  fecha: MyString
+  salon: MyText
