@@ -1,17 +1,25 @@
-
 /* General */
 html, body {
   height: 100%;
   margin: 0;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
-  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/bg-static.jpg');
+  background-image: url('data:image/jpeg;base64,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');
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Source Sans Pro', sans-serif;
 }
-
+.btn{
+  background-color: inherit;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 10px 12px;
+}
 .container {
   margin: 0 auto;
   width: 960px;
@@ -41,4 +49,16 @@ body {
     .container {
         width: 100%;
     }
+}
+.field {
+  margin-top:1em;
+}
+.form-control{
+  border: none;
+  border-bottom: 1px solid;
+  outline:none;
+  width: 100%;
+  display:block;
+  padding: 10px 0px;
+  font-size: 1.2em;
 }
