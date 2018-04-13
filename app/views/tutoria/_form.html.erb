@@ -7,11 +7,13 @@
 	<div class="field">
 		<%= f.text_field :materia, placeholder: "Materia", class:"form-control"%>
 	</div>
-	<div class="field">
-		<%= f.text_field :monitor, placeholder: "Monitor", class:"form-control"%>
+	<div class="field edit">
+		<%tutor=Tutor.all.map { |tutor| [tutor.nombre] }%>
+		<%= f.select( :monitor, options_for_select(tutor))%>
 	</div>
 	<div class="field">
-		<%= f.text_field :fecha, placeholder: "Fecha", class:"form-control"%>
+		<% fecha=Time.now.strftime("%d/%m/%Y") %>
+		<%= f.text_field :fecha, placeholder: "Fecha DD/MM/AAAA",value: fecha, class:"form-control"%>
 	</div>
 	<div class="field">
 		<%= f.text_field :salon, placeholder: "Salon", class:"form-control"%>
