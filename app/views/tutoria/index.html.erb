@@ -1,0 +1,6 @@
+<% @tutoria.each do |tutori| %>
+<h1><%= link_to tutori.materia, tutori %></h1>
+	<div>
+		<%= tutori.salon %> - <%= link_to "Eliminar", tutori, method: :delete %>
+	</div>
+<%end%>

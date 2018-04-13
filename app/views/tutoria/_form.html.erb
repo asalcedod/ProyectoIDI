@@ -1,0 +1,22 @@
+<%= form_for(@tutori) do |f|%>
+		<% @tutori.errors.full_messages.each do |message| %>	
+			<div class="be-red white top-space">
+				<%= message  %>
+			</div>
+		<%end%>
+	<div class="field">
+		<%= f.text_field :materia, placeholder: "Materia", class:"form-control"%>
+	</div>
+	<div class="field">
+		<%= f.text_field :monitor, placeholder: "Monitor", class:"form-control"%>
+	</div>
+	<div class="field">
+		<%= f.text_field :fecha, placeholder: "Fecha", class:"form-control"%>
+	</div>
+	<div class="field">
+		<%= f.text_field :salon, placeholder: "Salon", class:"form-control"%>
+	</div>
+	<div class="field">
+		<%= f.submit "Guardar", class:"btn be-red white "%>
+	</div>	
+	<%end%>
