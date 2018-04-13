@@ -34,7 +34,7 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-.field a {
+h1 .delete {
   color: red;
 }
 .fieldnew a {
@@ -55,6 +55,12 @@ li a:hover {
 }
 .edit{
   color: red;
+}
+.btnedit {
+  background-color: #06ac6d;
+  padding: 10px 24px;
+  color:white;
+  text-decoration:none;
 }
 .btnnew {
   background-color: #008CBA;

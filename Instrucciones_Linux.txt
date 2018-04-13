@@ -1,0 +1,9 @@
+***Antes de comenzar, es necesario tener instalado Ruby on Rails, si es un sistema operativo Linux favor revisar la guia de instalacion en el siguiente link: http://instalarrails.com/linux/index.html***
+
+1. Una vez intalado lo primero que haremos sera descargar el proyecto del repositorio en github, guardarlo y descomprimirlo. https://github.com/asalcedod/ProyectoIDI.git
+2. Despues vamos a abrir el terminal y nos moveremos a la carpeta del proyecto (ej. cd Documentos/ProyectoIDI-master)
+3. Una vez en la raiz del proyecto vamos a digitar el comando bundle install
+4. Luego vamos a realizar las migraciones de la base de datos con el comando rake db:migrate
+5. Por ultimo ejecutaremos el comando rails server para correr nuestro servidor local en rails y listo
+
+**Para revisar el proyecto ingrese a http://localhost:3000**

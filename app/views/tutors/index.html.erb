@@ -1,8 +1,17 @@
 <div class="grups-t">
 	<% @tutors.each do |tutor| %>
-	<h1><%= link_to tutor.nombre, tutor %></h1>
+	<h1><%= link_to tutor.nombre, tutor %> - <%= link_to "Eliminar", tutor, method: :delete, class:"delete" %></h1>
 		<div class="field">
-			<%= tutor.inf_contact %> - <%= link_to "Eliminar", tutor, method: :delete %>
+			Cédula: <%= tutor.cedula %>
+		</div>
+		<div class="field">
+			Programa: <%= tutor.programa %>
+		</div>
+		<div class="field">
+			Semestre: <%= tutor.semestre %>
+		</div>
+		<div class="field">
+			Inf de Contacto: <%= tutor.inf_contact %>
 		</div>
 	<%end%>
 	<div class="fieldnew">

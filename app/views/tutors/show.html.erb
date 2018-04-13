@@ -1,10 +1,18 @@
-<h1><%= @tutor.nombre %></h1>
-<div>
-	<%= @tutor.cedula %>
-</div>
-<div>
-	<%= @tutor.programa %>
-</div>
-<div>
-	<%= link_to "Editar", edit_tutor_path(@tutor), class:"edit"%>
+<div class="grups-t">
+	<h1><%= @tutor.nombre %></h1>
+	<div class="field">
+		Cédula: <%= @tutor.cedula %>
+	</div>
+	<div class="field">
+		Programa: <%= @tutor.programa %>
+	</div>
+	<div class="field">
+		Semestre: <%= @tutor.semestre %>
+	</div>
+	<div class="field">
+		Inf de Contacto: <%= @tutor.inf_contact %>
+	</div>
+	<div class="field">
+		<%= link_to "Editar", edit_tutor_path(@tutor), class:"btnedit"%>
+	</div>
 </div>

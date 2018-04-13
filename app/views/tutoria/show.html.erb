@@ -1,10 +1,18 @@
-<h1><%= @tutori.materia %></h1>
-<div>
-	<%= @tutori.monitor %>
-</div>
-<div>
-	<%= @tutori.salon %>
-</div>
-<div>
-	<%= link_to "Editar", edit_tutorium_path(@tutori), class:"edit"%>
-</div>
+<div class="grups-t">
+	<h1><%= @tutori.materia %></h1>
+	<div class="field">
+		Monitor: <%= @tutori.monitor %>
+	</div>
+	<div class="field">
+		Materia: <%= @tutori.materia %>
+	</div>
+	<div class="field">
+		Salon: <%= @tutori.salon %>
+	</div>
+	<div class="field">
+		Fecha: <%= @tutori.fecha %>
+	</div>
+	<div class="field">
+		<%= link_to "Editar", edit_tutorium_path(@tutori), class:"btnedit"%>
+	</div>
+</div

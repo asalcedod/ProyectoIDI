@@ -1,8 +1,17 @@
 <div class="grups-t">
 	<% @tutoria.each do |tutori| %>
-	<h1><%= link_to tutori.materia, tutori %></h1>
+	<h1><%= link_to tutori.materia, tutori %> - <%= link_to "Eliminar", tutori, method: :delete, class:"delete" %></h1>
 		<div class="field">
-			<%= tutori.salon %> - <%= link_to "Eliminar", tutori, method: :delete %>
+			Monitor: <%= tutori.monitor %>
+		</div>
+		<div class="field">
+			Materia: <%= tutori.materia %>
+		</div>
+		<div class="field">
+			Salon: <%= tutori.salon %>
+		</div>
+		<div class="field">
+			Fecha: <%= tutori.fecha %>
 		</div>
 	<%end%>
 	<div class="fieldnew">
