@@ -1,9 +1,11 @@
-<% @tutors.each do |tutor| %>
-<h1><%= link_to tutor.nombre, tutor %></h1>
-	<div>
-		<%= tutor.inf_contact %> - <%= link_to "Eliminar", tutor, method: :delete %>
+<div class="grups-t">
+	<% @tutors.each do |tutor| %>
+	<h1><%= link_to tutor.nombre, tutor %></h1>
+		<div class="field">
+			<%= tutor.inf_contact %> - <%= link_to "Eliminar", tutor, method: :delete %>
+		</div>
+	<%end%>
+	<div class="fieldnew">
+		<%= link_to "Nuevo Tutor", new_tutor_path, class:"btnnew"%>
 	</div>
-<%end%>
-<div>
-	<%= link_to "Nuevo Tutor", new_tutor_url%>
 </div>

@@ -1,9 +1,11 @@
-<% @tutoria.each do |tutori| %>
-<h1><%= link_to tutori.materia, tutori %></h1>
-	<div>
-		<%= tutori.salon %> - <%= link_to "Eliminar", tutori, method: :delete %>
+<div class="grups-t">
+	<% @tutoria.each do |tutori| %>
+	<h1><%= link_to tutori.materia, tutori %></h1>
+		<div class="field">
+			<%= tutori.salon %> - <%= link_to "Eliminar", tutori, method: :delete %>
+		</div>
+	<%end%>
+	<div class="fieldnew">
+		<%= link_to "Nueva Monitoria", new_tutorium_path, class:"btnnew"%>
 	</div>
-<%end%>
-<div class="field">
-	<%= link_to "Nueva Monitoria", new_tutorium_path%>
 </div>
